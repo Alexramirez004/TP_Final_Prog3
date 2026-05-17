@@ -103,7 +103,7 @@
   .hero {
     min-height: 50vh;
 
-    background-position: center;
+    background-position: left 10%;
   }
 
   .hero-content h2 {
