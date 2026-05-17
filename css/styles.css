@@ -83,6 +83,9 @@ header {
 
   z-index: 100;
 }
+header .btn {
+  width: fit-content;
+}
 
 .logo {
   display: flex;
