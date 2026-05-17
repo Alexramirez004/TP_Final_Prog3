@@ -1,0 +1,212 @@
+/* SERVICIOS */
+.cards-container {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 40px;
+
+  padding-top: 30px;
+}
+
+.card {
+  background-color: #1e293b;
+
+  width: 320px;
+
+  height: 380px;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  padding: 25px;
+
+  box-shadow: 0 5px 15px rgba(19, 225, 248, 0.35);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 0 25px rgba(19, 225, 248, 0.8);
+}
+
+.card img {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 1;
+}
+.card::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  z-index: 2;
+}
+
+.card h3,
+.card p {
+  position: relative;
+
+  z-index: 3;
+}
+
+.card h3 {
+  color: #00e5ff;
+
+  margin-bottom: 10px;
+
+  font-size: 28px;
+}
+.card p {
+  color: #f1f5f9;
+
+  font-size: 17px;
+
+  line-height: 1.6;
+}
+
+/* VEHICULOS */
+.vehiculos {
+  background-color: #111827;
+}
+
+.vehiculos-container {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: stretch;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+.vehiculo-card {
+  background-color: #1e293b;
+
+  width: 320px;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 15px rgba(19, 225, 248, 0.35);
+
+  transition: 0.3s;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.vehiculo-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 0 25px rgba(19, 225, 248, 0.8);
+}
+
+.vehiculo-card img {
+  height: 220px;
+
+  object-fit: cover;
+}
+
+.vehiculo-card h3 {
+  padding: 20px 20px 10px;
+}
+
+.vehiculo-card .btn {
+  margin-top: auto;
+
+  align-self: center;
+
+  margin-bottom: 20px;
+
+  padding: 15px 25px;
+}
+
+.tipo {
+  color: #00e5ff;
+
+  font-weight: bold;
+
+  padding: 0 20px;
+}
+
+.precio {
+  font-size: 22px;
+
+  font-weight: bold;
+
+  padding: 10px 20px;
+
+  color: white;
+}
+
+.descripcion {
+  padding: 0 20px 20px;
+
+  color: #cbd5e1;
+}
+.volver-inicio {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 60px;
+}
+/* DESTACADOS */
+.destacados {
+  background-color: #111827;
+}
+
+.mini-carrusel {
+  display: flex;
+
+  gap: 25px;
+
+  overflow-x: auto;
+
+  padding-bottom: 20px;
+}
+
+.mini-carrusel .vehiculo-card {
+  min-width: 320px;
+
+  flex-shrink: 0;
+}
+
+.ver-mas {
+  margin-top: 50px;
+
+  display: flex;
+
+  justify-content: center;
+}

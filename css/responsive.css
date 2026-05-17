@@ -1,0 +1,65 @@
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .nosotros {
+    flex-direction: column;
+  }
+
+  .nosotros-text h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  section h2 {
+    font-size: 30px;
+  }
+
+  .hero-content h2 {
+    font-size: 42px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .vehiculo-card {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
